@@ -6,20 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game of Life</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         :root{
             --dark: #092635;
             --light: #cfe0da;
+            --size: 1.7vmin;
         }
         #box {
             background-color: var(--dark);
             border: 1px solid var(--light);
             border-collapse: collapse;
-            margin-top: 6vh;
+            /*margin-top: 6vh;*/
         }
         .cell {
             background-color: var(--dark);
-            width: 10px;
-            height: 10px;
+            width: var(--size);
+            height: var(--size);
         }
         .alive {
             background-color: var(--light);
@@ -31,6 +36,10 @@
             background-color: var(--dark);
             display: flex;
             justify-content: center;
+            align-items: center;
+            height: fit-content;
+            height: 100vh;
+            max-height: 100vh;
         }
     </style>
 </head>

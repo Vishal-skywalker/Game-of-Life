@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Life</title>
+    <style>
+        :root{
+            --dark: #092635;
+            --light: #cfe0da;
+        }
+        #box {
+            background-color: var(--dark);
+            border: 1px solid var(--light);
+            border-collapse: collapse;
+            margin-top: 6vh;
+        }
+        .cell {
+            background-color: var(--dark);
+            width: 10px;
+            height: 10px;
+        }
+        .alive {
+            background-color: var(--light);
+        }
+        .dead {
+            background-color: var(--dark);
+        }
+        body {
+            background-color: var(--dark);
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <table id="box">
+    </table>
+    <script src="scricpt.js"></script>
+</body>
+</html>
